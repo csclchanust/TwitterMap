@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/threeCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:text="3D"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+            <CheckBox
+                android:id="@+id/satelliteCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/threeCB"
+                android:layout_below="@+id/threeCB"
+                android:text="Satellite"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+            <CheckBox
+                android:id="@+id/locateCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/previousCB"
+                android:text="Enable GPS"
+                android:textSize="13dp" />
+
+            <CheckBox
+                android:id="@+id/previousCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/friendCB"
+                android:text="Previous Position"
+                android:textSize="13dp" />
+
+            <CheckBox
+                android:id="@+id/friendCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:text="Friend Layer"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

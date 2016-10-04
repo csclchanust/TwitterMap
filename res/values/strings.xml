@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">TwitterMap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">TwitterMap</string>
+    <string name="consumer_key">TjOx5qv7eQPhx2xCfugfA</string>
+    <string name="consumer_secret">W04y1fKp7gSkzdWU7Jfae1vTbyxxHzEcqMgbMTK9fk</string>
+    <string name="map_api_v2_key">AIzaSyBBZNWlQyFq916CZLC_uo6p9vXxTfMJ7Xk</string>
+
+</resources>
